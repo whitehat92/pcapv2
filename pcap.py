@@ -14,7 +14,7 @@ import dpkt
 timeprompt = str(input("Do you want to print with time? (Y/N): "))
 if timeprompt == "Y" or timeprompt == "y" or timeprompt == "":
 
-    pcap = rdpcap('26_to_40_2019-06-04_09-08-27UTC.pcap')
+    pcap = rdpcap('<filetoimport.pcap')
     s = pcap.sessions()
     print("------- SUMMARY OF CAPTURE ------")
     print(pcap.summary)
